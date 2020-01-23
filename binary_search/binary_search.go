@@ -36,7 +36,7 @@ func binarySearch(list []int, size int, item int) int {
 		}
 	}
 
-	return -1
+	return -1		// return -1 if no item found
 }
 
 // string version.
@@ -56,5 +56,5 @@ func binarySearch(list []int, size int, item int) int {
 // 		}
 // 	}
 
-// 	return -1
+// 	return -1		// return -1 if no item found
 // }
