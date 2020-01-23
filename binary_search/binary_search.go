@@ -36,5 +36,5 @@ func binarySearch(list []int, item int) int {
 		}
 	}
 
-	return -1		// Return -1 if not found
+	return -1		// The binary function returns -1 if no item is found. 
 }
