@@ -9,9 +9,9 @@ func main() {
 	list := []int{1, 2, 3, 4, 5, 6, 10, 77, 500, 7, 15}
 	capacity := cap(list) - 1
 	item := 77
-	searchList := binarySearch(list, capacity, item)
+	searchResult := binarySearch(list, capacity, item)
 
-	if searchList != -1 {
+	if searchResult != -1 {
 		fmt.Println("item found")
 	} else {
 		fmt.Println("item not found")
