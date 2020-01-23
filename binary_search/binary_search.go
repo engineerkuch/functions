@@ -19,7 +19,7 @@ func main() {
 
 }
 
-// integer version
+// Note: Only simple integers
 func binarySearch(list []int, item int) int {
 
 	left := 0
@@ -36,25 +36,5 @@ func binarySearch(list []int, item int) int {
 		}
 	}
 
-	return -1
+	return -1		// Return -1 if not found
 }
-
-// string version.
-// func binarySearch(list []string, size int, item string) string {
-
-// 	left := 0
-// 	right := cap(list) - 1
-
-// 	for left <= right {
-// 		midpoint := (left + right) / 2
-// 		if item == list[midpoint] {
-// 			return midpoint
-// 		} else if item > list[midpoint] {
-// 			left = midpoint + 1
-// 		} else {
-// 			right = midpoint - 1
-// 		}
-// 	}
-
-// 	return -1
-// }
