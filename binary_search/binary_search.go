@@ -7,11 +7,11 @@ func main() {
 
 	// testing our function with an array of integers.
 	list := []int{1, 2, 3, 4, 5, 6, 10, 77, 500, 7, 15}
-	capacity := cap(list) - 1
+	// capacity := cap(list) - 1
 	item := 77
-	searchResult := binarySearch(list, capacity, item)
+	searchList := binarySearch(list, item)
 
-	if searchResult != -1 {
+	if searchList != -1 {
 		fmt.Println("item found")
 	} else {
 		fmt.Println("item not found")
@@ -20,7 +20,7 @@ func main() {
 }
 
 // integer version
-func binarySearch(list []int, size int, item int) int {
+func binarySearch(list []int, item int) int {
 
 	left := 0
 	right := cap(list) - 1
@@ -36,7 +36,7 @@ func binarySearch(list []int, size int, item int) int {
 		}
 	}
 
-	return -1		// return -1 if no item found
+	return -1
 }
 
 // string version.
@@ -56,5 +56,5 @@ func binarySearch(list []int, size int, item int) int {
 // 		}
 // 	}
 
-// 	return -1		// return -1 if no item found
+// 	return -1
 // }
